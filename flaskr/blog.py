@@ -24,7 +24,7 @@ def index():
 @bp.route('/create', methods = ('GET', 'POST'))
 @login_required
 def create():
-	if request.method = 'POST':
+	if request.method == 'POST':
 
 		title = request.form['title']
 		body = request.form['body']
@@ -71,7 +71,8 @@ def get_post(id, check_author=True):
 def update(id):
 	post = get_post(id)
 
-	if request.method == 'POST'
+	if request.method == 'POST':
+		
 		title = request.form['title']
 		body = request.form['body']
 		error = None
