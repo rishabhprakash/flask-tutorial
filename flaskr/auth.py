@@ -79,7 +79,7 @@ def login():
 		password = request.form['password']
 
 		# Connect to database
-		db = get_db()
+		db =get_db()
 		error = None
 
 		# Find user with submitted uername
